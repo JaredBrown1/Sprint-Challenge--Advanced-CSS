@@ -18,7 +18,7 @@
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    .width();
 
     img {
       width: 28%;
@@ -28,7 +28,7 @@
       
       @media @phone {
         flex-wrap: nowrap;
-        width: 100%;
+        .width();
       }
     }
 
@@ -68,7 +68,7 @@
       width: 50%;
 
       @media @phone {
-        width: 100%;
+        .width();
       }
 
       h3 {
@@ -80,17 +80,10 @@
       }
 
       .btn {
-        padding: 10px 40px;
-        border-radius: 10px;
-        background-color: black;
-        color: white;
-        cursor: pointer;
-        width: 150px;
-        font-size: 15px;
-        text-align: center;
+        .button();
 
         @media @phone {
-          width: 100%;
+          .width();
         }
 
         &:hover {
@@ -110,7 +103,7 @@
       }
       
       img {
-        width: 100%;
+        .width();
         height: auto;
         border-radius: 10px;
       }
